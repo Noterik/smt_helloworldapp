@@ -1,0 +1,2 @@
+setUrlTrigger(/lou/euscreen/helloworld,/lou/domain/euscreenxl/html5application/helloworld)
+log(helloworld)
