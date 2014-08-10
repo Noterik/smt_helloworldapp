@@ -148,6 +148,7 @@
 		</war>
 		
 		<exec executable="/bin/bash">
+		<!-- remove this line or use your own auto deploy method to get it into the lou upload dir -->
 		<arg value="/springfield/tomcat/bin/noterikcopy_6.sh"/>
 		</exec>
 	</target>
