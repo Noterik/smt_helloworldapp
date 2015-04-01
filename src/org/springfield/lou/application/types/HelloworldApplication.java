@@ -32,7 +32,18 @@ public class HelloworldApplication extends Html5Application{
     public void onNewScreen(Screen s) {
         loadStyleSheet(s, "generic");
         loadContent(s, "titlepart");
-        s.setContent("defaultoutput", "Hello World !");
+        String role = s.getParameter("role");
+        if(role.equalsIgnoreCase("teacher")) {
+        	loadContent(s, "mainscreen");
+        	s.setRole("teacher");
+        } else {
+        	s.setRole("student");
+        	s.setContent("titlepart", "<h1>Wait to see a picture.</h1>");
+        }
     }
-
+    
+    public void openImage(Screen s, String imgId) {
+    	String body = "<div id=\"img1\">" + "imagee1</div>";
+    	setContentAllScreensWithRole("student","defaultoutput","img" + body);
+    }
 }
