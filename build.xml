@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="smt_helloworldapp" default="deploy-war">
+<project name="smt_ponggameapp" default="deploy-war">
 	
 	<property name="root.dir" value="." />
 	<property name="sources.dir" value="${root.dir}/src" />
@@ -146,11 +146,6 @@
 			 <exclude name="WEB-INF/web.xml" />
 			</fileset>
 		</war>
-		
-		<exec executable="/bin/bash">
-		<!-- remove this line or use your own auto deploy method to get it into the lou upload dir -->
-		<arg value="/springfield/tomcat/bin/noterikcopy_6.sh"/>
-		</exec>
 	</target>
 	
 </project>
